@@ -1,0 +1,36 @@
+speakeasyVersion: 1.469.11
+sources:
+    FastAPI:
+        sourceNamespace: fast-api
+        sourceRevisionDigest: sha256:6243c5d0c1f2aca4437a40d286234efd475ae3ffd5be29121dc40d5529eaff67
+        sourceBlobDigest: sha256:eea9e78c25e8aae534e16f49008a3c4695ca5e536d2729e1c1714e1153c5b662
+        tags:
+            - latest
+            - 0.1.0
+targets:
+    my-company-sdk:
+        source: FastAPI
+        sourceNamespace: fast-api
+        sourceRevisionDigest: sha256:6243c5d0c1f2aca4437a40d286234efd475ae3ffd5be29121dc40d5529eaff67
+        sourceBlobDigest: sha256:eea9e78c25e8aae534e16f49008a3c4695ca5e536d2729e1c1714e1153c5b662
+        codeSamplesNamespace: fast-api-python-code-samples
+        codeSamplesRevisionDigest: sha256:01eaf82b51dafd24f70625e7a6277545385f0adb44a9cd9936359a682957d9d8
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        FastAPI:
+            inputs:
+                - location: ../../openapi_yamls/required_missing.yaml
+            registry:
+                location: registry.speakeasyapi.dev/test1-x8s/test1/fast-api
+    targets:
+        my-company-sdk:
+            target: python
+            source: FastAPI
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/test1-x8s/test1/fast-api-python-code-samples
+                labelOverride:
+                    fixedValue: Python (SDK)
+                blocking: false

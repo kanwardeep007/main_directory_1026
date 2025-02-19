@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    FastAPI:
+        inputs:
+            - location: ../../openapi_yamls/required_missing.yaml
+        registry:
+            location: registry.speakeasyapi.dev/test1-x8s/test1/fast-api
+targets:
+    my-company-sdk:
+        target: python
+        source: FastAPI
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/test1-x8s/test1/fast-api-python-code-samples
+            labelOverride:
+                fixedValue: Python (SDK)
+            blocking: false

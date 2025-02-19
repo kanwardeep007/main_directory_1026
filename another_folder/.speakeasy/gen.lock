@@ -1,0 +1,81 @@
+lockVersion: 2.0.0
+id: 877f1fb8-b533-4f8b-afde-c0d0bdeeee1c
+management:
+  docChecksum: 7b43aeabfa655c35fcde0c36277150c3
+  docVersion: 0.1.0
+  speakeasyVersion: 1.469.11
+  generationVersion: 2.493.32
+  releaseVersion: 0.0.1
+  configChecksum: 2cb667a3edff499c0b4cee53b66c785a
+features:
+  python:
+    additionalDependencies: 1.0.0
+    core: 5.10.4
+    defaultEnabledRetries: 0.2.0
+    devContainers: 3.0.0
+    envVarSecurityUsage: 0.3.2
+    flattening: 3.1.0
+    globalSecurityCallbacks: 1.0.0
+    globalServerURLs: 3.1.0
+    methodArguments: 1.0.2
+    responseFormat: 1.0.1
+    retries: 3.0.2
+    sdkHooks: 1.0.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .python-version
+  - .vscode/settings.json
+  - USAGE.md
+  - docs/models/readitemitemsitemidgetrequest.md
+  - docs/models/utils/retryconfig.md
+  - docs/sdks/mycompanysdk/README.md
+  - poetry.toml
+  - py.typed
+  - pylintrc
+  - pyproject.toml
+  - scripts/prepare-readme.py
+  - scripts/publish.sh
+  - src/my_company_sdk/__init__.py
+  - src/my_company_sdk/_hooks/__init__.py
+  - src/my_company_sdk/_hooks/sdkhooks.py
+  - src/my_company_sdk/_hooks/types.py
+  - src/my_company_sdk/_version.py
+  - src/my_company_sdk/basesdk.py
+  - src/my_company_sdk/httpclient.py
+  - src/my_company_sdk/models/__init__.py
+  - src/my_company_sdk/models/apierror.py
+  - src/my_company_sdk/models/read_item_items_item_id_getop.py
+  - src/my_company_sdk/py.typed
+  - src/my_company_sdk/sdk.py
+  - src/my_company_sdk/sdkconfiguration.py
+  - src/my_company_sdk/types/__init__.py
+  - src/my_company_sdk/types/basemodel.py
+  - src/my_company_sdk/utils/__init__.py
+  - src/my_company_sdk/utils/annotations.py
+  - src/my_company_sdk/utils/enums.py
+  - src/my_company_sdk/utils/eventstreaming.py
+  - src/my_company_sdk/utils/forms.py
+  - src/my_company_sdk/utils/headers.py
+  - src/my_company_sdk/utils/logger.py
+  - src/my_company_sdk/utils/metadata.py
+  - src/my_company_sdk/utils/queryparams.py
+  - src/my_company_sdk/utils/requestbodies.py
+  - src/my_company_sdk/utils/retries.py
+  - src/my_company_sdk/utils/security.py
+  - src/my_company_sdk/utils/serializers.py
+  - src/my_company_sdk/utils/url.py
+  - src/my_company_sdk/utils/values.py
+examples:
+  read_item_items__item_id__get:
+    speakeasy-default-read-item-items-item-id-get:
+      parameters:
+        path:
+          random_id: false
+      responses:
+        "200":
+          application/json: "<value>"
+examplesVersion: 1.0.0
+generatedTests: {}
